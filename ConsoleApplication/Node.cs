@@ -8,8 +8,12 @@ namespace ConsoleApplication
         //with all other nodes.
         public string ID { get; set; }
         public Dictionary<string,float> nodeDictionary = new Dictionary<string, float>();
+
+        public Node(string ID)
+        {
+            this.ID = ID;
+        }
         
         
-    }
     }
 }
