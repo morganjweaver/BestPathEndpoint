@@ -29,10 +29,10 @@ namespace ConsoleApplication
             Console.WriteLine("Distance should be 6 . . . ");
             BestPathDirections result = testMap6Nodes.getBestPath(testMap6Nodes.allNodes["a"], 
                 testMap6Nodes.allNodes["e"]);
-            Console.WriteLine("Distance is %s", result.totalDistance);
+            Console.WriteLine("Distance is {0}", result.totalDistance);
             Console.WriteLine("Path is ");
             foreach(var loc in result.nodePath)
-                Console.Write(" %s ", loc);
+                Console.Write(" {0} ", loc);
             
 
         }

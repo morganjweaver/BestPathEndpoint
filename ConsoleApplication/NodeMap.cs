@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace ConsoleApplication
 {
@@ -13,10 +14,17 @@ namespace ConsoleApplication
         {
             BestPathDirections returnPath = new BestPathDirections();
             int runningTotalDistance = 0;
-            Dictionary<string, float> pathLengths = start.nodeDictionary; //shortest paths from source to given node
+            Dictionary<string, float> pathLengths = new Dictionary<string, float>(); //shortest paths from source to given node
             Dictionary<string, bool> visitedYet = new Dictionary<string, bool>();
             Dictionary<string, string> nodeParent = new Dictionary<string, string>(); 
             //nodePaths holds the cheapest predecessor to each node; recursively backtrack to find path
+            
+            if (this.allNodes.Count == 0 || this.allNodes.Count == 1) //return for edge cases
+            {
+                returnPath.nodePath.Add("ERROR");
+                returnPath.totalDistance = 0;
+                return returnPath;
+            }
             
             //Inner method chosen bc minDist not used anywhere else, needs all of BestPath's dictionaries
             string minDistance()
@@ -44,7 +52,7 @@ namespace ConsoleApplication
             {
                 if (nodeParent[dest] == "NONE")
                 {
-                    returnPath.totalDistance = pathLengths[dest];
+                    returnPath.totalDistance = pathLengths[end.ID];
                     return;
                 } //if source node, add total dist and return to caller
                     
@@ -54,7 +62,7 @@ namespace ConsoleApplication
             //Here we initialize the data structures that hold the map of path lengths as the algo
             //explores each option, as well as a true/false map of visited nodes and finally a list
             //of the node sequence to arrive at each node:
-            foreach (var location in start.nodeDictionary.Keys)
+            foreach (var location in this.allNodes.Keys.ToList())
             {
                 pathLengths[location] = int.MaxValue; //init all path dists to infinity til we learn otherwise
                 visitedYet.Add(location, false); //haven't visited any nodes yet
@@ -73,11 +81,11 @@ namespace ConsoleApplication
 
                 foreach (var item in this.allNodes[currentNode].nodeDictionary) //for all nodes connected to current
                 {
-                    if (visitedYet[item.Key] == false && (pathLengths[currentNode] +
-                        allNodes[currentNode].nodeDictionary[item.Key]) < pathLengths[node.Key])
+                    if (!visitedYet[item.Key] && (pathLengths[currentNode] +
+                        allNodes[currentNode].nodeDictionary[item.Key] < pathLengths[item.Key]))
                     {
                         nodeParent[item.Key] = currentNode;
-                        pathLengths[node.Key] = pathLengths[currentNode] +
+                        pathLengths[item.Key] = pathLengths[currentNode] +
                                                 allNodes[currentNode].nodeDictionary[item.Key];
                     }
                 }
@@ -85,6 +93,7 @@ namespace ConsoleApplication
             }
             returnPath.nodePath.Add(end.ID);//add final dest to beginning of list before recursive building of sequence
             getReturnPathSequence(end.ID);
+            returnPath.nodePath.Reverse(); // !!! C/C++ definitely doesn't have this
             return returnPath;
 
 
