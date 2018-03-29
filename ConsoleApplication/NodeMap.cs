@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-
+using Newtonsoft.Json;
 namespace ConsoleApplication
 {
     public class NodeMap
@@ -9,7 +9,24 @@ namespace ConsoleApplication
         public Dictionary<string, Node> allNodes = new Dictionary<string, Node>();
         
         //Djikstra's algo, a greedy, spanning tree algo that finds the shortest paths for all nodes:
-        
+        public int UpdateMap(string JSONput)
+        {
+            //TODO: Add try/catch here!
+            
+            IncomingNodeListJSON nodeUpdates = JsonConvert.DeserializeObject<IncomingNodeListJSON>(JSONput);
+            foreach (string node in nodeUpdates.nodes.Keys)
+            {
+                foreach (var pair in nodeUpdates.nodes[node])
+                {
+                    if (allNodes[node].nodeDictionary.ContainsKey(pair.Key))
+                        allNodes[node].nodeDictionary[pair.Key] = pair.Value;
+                    else
+                        allNodes[node].nodeDictionary.Add(pair.Key, pair.Value);
+                }
+               
+            }
+            return 0;
+        }
         public BestPathDirections getBestPath(Node start, Node end)
         {
             BestPathDirections returnPath = new BestPathDirections();
