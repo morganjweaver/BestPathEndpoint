@@ -7,7 +7,11 @@ namespace ConsoleApplication
     {
         public string ID { get; set; }
         public Dictionary<string, Node> allNodes = new Dictionary<string, Node>();
-        
+
+        public NodeMap(string ID)
+        {
+            this.ID = ID;
+        }
         //Djikstra's algo, a greedy, spanning tree algo that finds the shortest paths for all nodes:
         public int UpdateMap(string JSONput)
         {

@@ -8,7 +8,7 @@ namespace ConsoleApplication
     {
         static NodeMap getMap()
         {
-            NodeMap testMap6Nodes = new NodeMap();
+            NodeMap testMap6Nodes = new NodeMap("NodeFarm");
             for (var i = 'a'; i < 'g'; i++)
             {
                 var n = new Node(i.ToString());
@@ -48,8 +48,6 @@ namespace ConsoleApplication
         {
             NodeMap map = getMap();
             string test = @"{'nodes': 'a': [ {'d',5},{'b':2}]}";
-            //map.UpdateMap(test);
-            //Console.WriteLine();
             IncomingNodeListJSON testList = new IncomingNodeListJSON();
             testList.nodes.Add("a", new Dictionary<string, float>());
             testList.nodes["a"].Add("b",3);
