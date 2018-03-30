@@ -1,8 +1,0 @@
-/Users/morganjweaver/RiderProjects/Microsoft_Weaver/ConsoleApplication/bin/Debug/netcoreapp1.1/ConsoleApplication.deps.json
-/Users/morganjweaver/RiderProjects/Microsoft_Weaver/ConsoleApplication/bin/Debug/netcoreapp1.1/ConsoleApplication.runtimeconfig.json
-/Users/morganjweaver/RiderProjects/Microsoft_Weaver/ConsoleApplication/bin/Debug/netcoreapp1.1/ConsoleApplication.runtimeconfig.dev.json
-/Users/morganjweaver/RiderProjects/Microsoft_Weaver/ConsoleApplication/bin/Debug/netcoreapp1.1/ConsoleApplication.dll
-/Users/morganjweaver/RiderProjects/Microsoft_Weaver/ConsoleApplication/bin/Debug/netcoreapp1.1/ConsoleApplication.pdb
-/Users/morganjweaver/RiderProjects/Microsoft_Weaver/ConsoleApplication/obj/Debug/netcoreapp1.1/ConsoleApplication.AssemblyInfo.cs
-/Users/morganjweaver/RiderProjects/Microsoft_Weaver/ConsoleApplication/obj/Debug/netcoreapp1.1/ConsoleApplication.dll
-/Users/morganjweaver/RiderProjects/Microsoft_Weaver/ConsoleApplication/obj/Debug/netcoreapp1.1/ConsoleApplication.pdb

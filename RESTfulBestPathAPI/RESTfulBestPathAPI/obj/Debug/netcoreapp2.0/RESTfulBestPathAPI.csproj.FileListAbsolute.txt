@@ -1,3 +1,0 @@
-/Users/morganjweaver/Projects/RESTfulBestPathAPI/RESTfulBestPathAPI/obj/Debug/netcoreapp2.0/RESTfulBestPathAPI.csproj.CoreCompileInputs.cache
-/Users/morganjweaver/Projects/RESTfulBestPathAPI/RESTfulBestPathAPI/obj/Debug/netcoreapp2.0/RESTfulBestPathAPI.AssemblyInfoInputs.cache
-/Users/morganjweaver/Projects/RESTfulBestPathAPI/RESTfulBestPathAPI/obj/Debug/netcoreapp2.0/RESTfulBestPathAPI.AssemblyInfo.cs

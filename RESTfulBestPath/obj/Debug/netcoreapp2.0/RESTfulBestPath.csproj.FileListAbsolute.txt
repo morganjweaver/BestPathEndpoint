@@ -1,0 +1,10 @@
+/Users/morganjweaver/Projects/RESTfulBestPath/RESTfulBestPath/bin/Debug/netcoreapp2.0/RESTfulBestPath.deps.json
+/Users/morganjweaver/Projects/RESTfulBestPath/RESTfulBestPath/bin/Debug/netcoreapp2.0/RESTfulBestPath.runtimeconfig.json
+/Users/morganjweaver/Projects/RESTfulBestPath/RESTfulBestPath/bin/Debug/netcoreapp2.0/RESTfulBestPath.runtimeconfig.dev.json
+/Users/morganjweaver/Projects/RESTfulBestPath/RESTfulBestPath/bin/Debug/netcoreapp2.0/RESTfulBestPath.dll
+/Users/morganjweaver/Projects/RESTfulBestPath/RESTfulBestPath/bin/Debug/netcoreapp2.0/RESTfulBestPath.pdb
+/Users/morganjweaver/Projects/RESTfulBestPath/RESTfulBestPath/obj/Debug/netcoreapp2.0/RESTfulBestPath.csproj.CoreCompileInputs.cache
+/Users/morganjweaver/Projects/RESTfulBestPath/RESTfulBestPath/obj/Debug/netcoreapp2.0/RESTfulBestPath.AssemblyInfoInputs.cache
+/Users/morganjweaver/Projects/RESTfulBestPath/RESTfulBestPath/obj/Debug/netcoreapp2.0/RESTfulBestPath.AssemblyInfo.cs
+/Users/morganjweaver/Projects/RESTfulBestPath/RESTfulBestPath/obj/Debug/netcoreapp2.0/RESTfulBestPath.dll
+/Users/morganjweaver/Projects/RESTfulBestPath/RESTfulBestPath/obj/Debug/netcoreapp2.0/RESTfulBestPath.pdb

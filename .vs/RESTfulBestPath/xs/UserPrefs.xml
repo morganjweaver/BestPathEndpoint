@@ -1,0 +1,24 @@
+﻿<Properties StartupConfiguration="{7B582428-BEA3-4DCB-B33C-20C4FC1497D7}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="RESTfulBestPath/Startup.cs">
+    <Files>
+      <File FileName="RESTfulBestPath/Program.cs" Line="24" Column="10" />
+      <File FileName="RESTfulBestPath/Startup.cs" Line="17" Column="18" />
+      <File FileName="RESTfulBestPath/Controllers/ValuesController.cs" Line="46" Column="1" />
+      <File FileName="RESTfulBestPath/Models/BestPathDirections.cs" Line="1" Column="1" />
+      <File FileName="RESTfulBestPath/Models/MapsContext.cs" Line="1" Column="2" />
+      <File FileName="RESTfulBestPath/Models/Node.cs" Line="1" Column="1" />
+      <File FileName="RESTfulBestPath/Properties/launchSettings.json" Line="26" Column="37" />
+      <File FileName="RESTfulBestPath/appsettings.Development.json" Line="1" Column="1" />
+      <File FileName="RESTfulBestPath/appsettings.json" Line="1" Column="1" />
+      <File FileName="RESTfulBestPath/Models/NodeMap.cs" Line="1" Column="1" />
+      <File FileName="RESTfulBestPath/Models/Node_JSON.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.RESTfulBestPath PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>
