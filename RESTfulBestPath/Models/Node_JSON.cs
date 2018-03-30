@@ -6,6 +6,7 @@ namespace RESTfulBestPath
     public class IncomingNodeListJSON
     {
         public Dictionary<string, Dictionary<string,float>> nodes { get; set; }
+		public string ID { get; set; }
 
         public IncomingNodeListJSON()
         {
